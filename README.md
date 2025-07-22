@@ -57,27 +57,7 @@
 └── ... (其他文件)
 ```
 
-### 2\. 创建版本文件
 
-在你的仓库根目录下创建一个名为 `version.txt` 的文件。为了让脚本首次运行时能正常工作，可以先在里面写入一个初始版本号，例如：
-
-```
-0.0.0
-```
-
-### 3\. (可选) 自定义配置
-
-如果你想跟踪不同的仓库或文件，可以修改 `up.yml` 文件顶部的 `env` 环境变量：
-
-```yaml
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    env: # 修改这里的配置
-      REPO_OWNER: "bia-pain-bache"  # 目标仓库的所有者
-      REPO_NAME: "BPB-Worker-Panel"   # 目标仓库的名称
-      TARGET_FILE: "worker.zip"       # 目标 Release 中的资源文件名
-```
 
 你也可以修改 `schedule` 部分的 `cron` 表达式来调整自动检查的频率。
 
