@@ -1,6 +1,4 @@
-好的，我已经按照您的要求，将这部分具体的配置说明添加到了 `README.md` 的 “如何使用” 部分。
 
-这是更新后的完整 `README.md` 内容：
 
 -----
 
@@ -8,7 +6,7 @@
 
 [](https://www.google.com/search?q=https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/up.yml)
 
-这是一个通用的 GitHub Actions 工作流，旨在自动从指定的上游仓库（`bia-pain-bache/BPB-Worker-Panel`）拉取最新的 Release 文件，并将其更新到你自己的仓库中。
+这是一个通用的 GitHub Actions 工作流，旨在自动从指定的上游仓库（）拉取最新的 Release 文件，并将其更新到你自己的仓库中。
 
 它非常适合用于自动同步 Cloudflare Worker、前端静态资源或任何其他通过 GitHub Release 发布的文件，确保你的项目始终保持最新。
 
@@ -30,7 +28,7 @@
 2.  **检出代码**：首先，工作流会检出你仓库的当前代码。
 3.  **版本比较**：
       - 读取你仓库根目录下的 `version.txt` 文件，获取本地版本号。
-      - 通过 GitHub API 获取上游仓库（`bia-pain-bache/BPB-Worker-Panel`）的最新 Release 的 `tag_name` 作为远程版本号。
+      - 通过 GitHub API 获取上游仓库（``）的最新 Release 的 `tag_name` 作为远程版本号。
 4.  **判断更新**：
       - 如果远程版本号与本地版本号不同，或者你手动触发了“强制更新”，则继续执行。
       - 如果版本相同且未强制更新，则工作流正常结束，不执行任何操作。
